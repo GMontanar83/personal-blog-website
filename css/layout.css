@@ -1,0 +1,33 @@
+* {
+  border: 1px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+section {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+aside {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
