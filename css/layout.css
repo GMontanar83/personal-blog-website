@@ -34,10 +34,6 @@ section {
   grid-area: section;
 }
 
-aside {
-  grid-area: aside;
-}
-
 footer {
   grid-area: footer;
 }
