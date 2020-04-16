@@ -15,7 +15,7 @@
 
 }
 
-nav, section, footer, aside {
+nav, section, footer, aside, img, figure {
   border: 1px solid black;
 }
 
