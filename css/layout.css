@@ -1,9 +1,10 @@
 .container {
   display: grid;
   height: 100vh;
-  width: 90vw;
+  width: 95vw;
+  justify-content: center;
   margin: auto;
-  grid-template-columns: 70vw 20vw;
+  grid-template-columns: 70vw 15vw;
   grid-template-rows: 30vh 10vh 55vh 5vh;
   grid-gap: 1%;
   grid-template-areas:
@@ -14,7 +15,7 @@
 
 }
 
-nav, section, aside, footer {
+nav, section, footer, .blog-card {
   border: 1px solid black;
 }
 
@@ -32,8 +33,17 @@ nav {
   align-items: center;
 }
 
-section {
+.blog-post {
   grid-area: section;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.blog-card {
+  width: 40%;
+  height: 80%;
 }
 
 footer {
