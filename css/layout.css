@@ -15,7 +15,7 @@
 
 }
 
-nav, section, footer, aside, img, figure {
+nav, section, footer, aside, img, figure, p {
   border: 1px solid black;
 }
 
@@ -33,8 +33,21 @@ nav {
   align-items: center;
 }
 
-.blog-post {
+ .blog-post {
   grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.blog-post p {
+  width: 95%;
+  align-self: center;
+}
+
+.blog-post button {
+  width: 25%;
+  align-self: center;
 }
 
 aside {
