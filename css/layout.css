@@ -15,7 +15,7 @@
 
 }
 
-nav, section, footer, .blog-card {
+nav, section, footer, .blog-card, .about-me {
   border: 1px solid black;
 }
 
@@ -42,6 +42,11 @@ nav {
 }
 
 .blog-card {
+  width: 40%;
+  height: 80%;
+}
+
+.about-me {
   width: 40%;
   height: 80%;
 }
