@@ -37,7 +37,7 @@ nav {
   grid-area: section;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -60,7 +60,7 @@ aside {
 }
 
 aside p {
-  width: 95%;
+  width: 90%;
 }
 
 .social-icons {
@@ -69,9 +69,10 @@ aside p {
 }
 
 i {
-  margin: 1%;
+  margin: 2%;
 }
 
 footer {
   grid-area: footer;
+  text-align: center;
 }
