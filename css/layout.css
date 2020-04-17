@@ -15,7 +15,7 @@
 
 }
 
-nav, section, footer, aside, img, figure, p, h2 {
+nav, section, footer, aside, img, figure, p, h2, aside span {
   border: 1px solid black;
 }
 
@@ -53,6 +53,23 @@ nav {
 
 aside {
   grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+aside p {
+  width: 95%;
+}
+
+.social-icons {
+  width: 90%;
+  text-align: center;
+}
+
+i {
+  margin: 1%;
 }
 
 footer {
