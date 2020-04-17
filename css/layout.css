@@ -15,7 +15,7 @@
 
 }
 
-nav, section, footer, aside, img, figure, p {
+nav, section, footer, aside, img, figure, p, h2 {
   border: 1px solid black;
 }
 
@@ -37,16 +37,18 @@ nav {
   grid-area: section;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-post p {
-  width: 95%;
+  width: 90%;
   align-self: center;
 }
 
 .blog-post a {
   align-self: center;
+  margin-bottom: 2%;
 }
 
 aside {
