@@ -1,3 +1,12 @@
+body {
+  background-color: #8FC1E3;
+}
+
+section, aside, footer, nav {
+  background-color: #F7F9FB;
+  color: #31708E;
+}
+
 .fa-facebook {
   color: rgb(59, 91, 152);
 }
