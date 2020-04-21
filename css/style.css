@@ -1,11 +1,40 @@
 body {
   background-color: #8FC1E3;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header {
+  border-radius: 5px;
 }
 
 section, aside, footer, nav {
   background-color: #F7F9FB;
-  color: #31708E;
 }
+
+nav a {
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.nestedGrid p {
+  font-size: 1em;
+}
+
+aside img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+aside p {
+  font-size: 1em;
+}
+
 
 .fa-facebook {
   color: rgb(59, 91, 152);

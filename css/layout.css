@@ -1,22 +1,15 @@
 .container {
   display: grid;
-  height: 100vh;
-  width: 95vw;
   justify-content: center;
   margin: auto;
-  grid-template-columns: 60vw 25vw;
-  grid-template-rows: 30vh 10vh 55vh 5vh;
+  grid-template-columns: 60% 30%;
+  grid-template-rows: 1.5fr 0.5fr 4fr 0.5fr;
   grid-gap: 1%;
   grid-template-areas:
   "hd hd"
   "nav nav"
   "section aside"
   "footer footer";
-
-}
-
-nav, section, footer, aside {
-  border: 1px solid black;
 }
 
 header {
@@ -33,22 +26,47 @@ nav {
   align-items: center;
 }
 
- .blog-post {
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-post {
   grid-area: section;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+}
+
+.nestedGrid {
+  display: grid;
+  width: 100%;
+  height: 100%;
   align-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 6fr 3fr 1fr;
+  grid-template-areas:
+  "img img img img"
+  "p p p p"
+  "a a a a";
 }
 
-.blog-post p {
-  width: 90%;
-  align-self: center;
+.nestedGrid figure {
+  grid-area: img;
 }
 
-.blog-post a {
-  align-self: center;
-  margin-bottom: 2%;
+.nestedGrid figure img {
+  width: 65%;
+  height: auto;
+}
+
+.nestedGrid p {
+  grid-area: p;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.nestedGrid a {
+  grid-area: a;
+  justify-self: center;
+  margin-bottom: 1%;
 }
 
 aside {
@@ -57,6 +75,10 @@ aside {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+aside h2 {
+  flex-shrink: 1;
 }
 
 aside p {
@@ -74,5 +96,67 @@ i {
 
 footer {
   grid-area: footer;
-  text-align: center;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 3fr 3fr 1fr;
+    grid-gap: 1%;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "section"
+    "aside"
+    "footer";
+  }
+
+  h1, nav a {
+    font-size: 1em;
+  }
+
+  .nestedGrid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 6fr 3fr 1fr;
+    grid-template-areas:
+    "p"
+    "a";
+  }
+
+  .nestedGrid figure {
+    display: none;
+  }
+
+  .nestedGrid a {
+    margin-bottom: 5%;
+  }
+
+  .nestedGrid p {
+    font-size: 0.5em;
+  }
+
+  aside h2 {
+    font-size: 5vw;
+  }
+
+  aside p {
+    font-size: 0.5em;
+  }
+
+  footer p {
+    margin: auto;
+  }
 }
