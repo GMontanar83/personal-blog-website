@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 3fr 3fr 1fr;
+    grid-gap: 1%;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "section"
+    "aside"
+    "footer";
+  }
+
+  h1, nav a {
+    font-size: 1em;
+  }
+
+  .nestedGrid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 6fr 3fr 1fr;
+    grid-template-areas:
+    "p"
+    "a";
+  }
+
+  .nestedGrid figure {
+    display: none;
+  }
+
+  .nestedGrid a {
+    margin-bottom: 5%;
+  }
+
+  .nestedGrid p {
+    font-size: 0.5em;
+  }
+
+  aside h2 {
+    font-size: 5vw;
+  }
+
+  aside p {
+    font-size: 0.5em;
+  }
+
+  footer p {
+    margin: auto;
+  }
+}

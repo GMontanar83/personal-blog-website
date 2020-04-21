@@ -24,6 +24,12 @@ h1 {
   font-size: 1em;
 }
 
+.nestedGrid button {
+  font-size: 1.5em;
+  background-color: #8FC1E3;
+  border-radius: 5px;
+}
+
 aside img {
   vertical-align: middle;
   width: 150px;
